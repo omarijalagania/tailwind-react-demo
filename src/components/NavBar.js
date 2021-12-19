@@ -76,7 +76,7 @@ export default function NavBar() {
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navigation.map((item) => (
                 <a
-                  key={item.name}
+                  key={Math.random(1) * 2}
                   href={item.href}
                   className={classNames(
                     item.current

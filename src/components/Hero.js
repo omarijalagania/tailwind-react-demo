@@ -38,11 +38,6 @@ const solutions = [
     icon: QuestionMarkCircleIcon,
   },
 ];
-const navigation = [
-  { name: "Pricing", href: "#" },
-  { name: "Partners", href: "#" },
-  { name: "Company", href: "#" },
-];
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
