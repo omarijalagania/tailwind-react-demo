@@ -7,10 +7,12 @@ import SignIn from "./components/SignIn";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/signin" element={<SignIn />} />
-    </Routes>
+    <>
+      <Home />
+      <Routes>
+        <Route path="/signin" element={<SignIn />} />
+      </Routes>
+    </>
   );
 }
 
