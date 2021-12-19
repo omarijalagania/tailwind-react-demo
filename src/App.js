@@ -11,6 +11,7 @@ import Registration from "./components/Registration";
 import PasswordReset from "./components/PasswordReset";
 import PageNotFound from "./components/404";
 import QR from "./components/QR";
+import DataVisualization from "./components/DataVisualization ";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/registration" element={<Registration />} />
         <Route path="/password-reset" element={<PasswordReset />} />
         <Route path="/qr" element={<QR />} />
+        <Route path="/dataVisualization" element={<DataVisualization />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer />

@@ -13,6 +13,8 @@ const navigation = [
   { name: "კალენდარი", href: "#", current: false },
   { name: "რეგისტრაცია", href: "/registration", current: false },
   { name: "QR Code", href: "/qr", current: false },
+  { name: "Data Visualization", href: "/dataVisualization", current: false },
+
 ];
 
 function classNames(...classes) {
