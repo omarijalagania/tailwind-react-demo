@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import Registration from "./components/Registration";
 import PasswordReset from "./components/PasswordReset";
 import PageNotFound from "./components/404";
+import QR from "./components/QR";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/registration" element={<Registration />} />
         <Route path="/password-reset" element={<PasswordReset />} />
+        <Route path="/qr" element={<QR />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer />
