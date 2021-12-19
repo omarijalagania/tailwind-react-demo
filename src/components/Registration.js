@@ -1,19 +1,7 @@
-/*
-  This example requires Tailwind CSS v2.0+
+import React from "react";
 
-  This example requires some changes to your config:
+import { Link } from "react-router-dom";
 
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
 export default function Registration() {
   return (
     <div className="min-h-screen bg-white flex">
@@ -125,12 +113,12 @@ export default function Registration() {
 
                 <div className="flex items-center justify-between">
                   <div className="text-sm">
-                    <a
-                      href="#"
+                    <Link
+                      to="/signin"
                       className="font-medium text-indigo-600 hover:text-indigo-500"
                     >
                       ხარ დარეგისტრირებული?
-                    </a>
+                    </Link>
                   </div>
                 </div>
 
