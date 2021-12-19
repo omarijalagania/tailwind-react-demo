@@ -45,7 +45,7 @@ function classNames(...classes) {
 
 export default function Hero() {
   //Pass this State to Modal
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-white">
