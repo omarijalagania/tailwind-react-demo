@@ -9,6 +9,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Registration from "./components/Registration";
 import PasswordReset from "./components/PasswordReset";
+import PageNotFound from "./components/404";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/registration" element={<Registration />} />
         <Route path="/password-reset" element={<PasswordReset />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer />
     </>
