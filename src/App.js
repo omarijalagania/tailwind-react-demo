@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import SignIn from "./components/SignIn";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/signin" element={<SignIn />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </>
   );
 }
