@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import QRCode from "react-qr-code";
 
 function QR() {
-  const [qr, setQr] = useState("Hello");
+  const [qr, setQr] = useState("https://www.facebook.com");
 
   return (
     <div className="p-20">
