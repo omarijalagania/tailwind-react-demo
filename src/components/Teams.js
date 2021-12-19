@@ -24,26 +24,18 @@ const people = [
     linkedinUrl: "#",
   },
   {
-    name: "Lindsay Walton",
-    role: "Front-end Developer",
+    name: "David Smith",
+    role: "CEO",
     imageUrl:
-      "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+      "https://images.pexels.com/photos/2269872/pexels-photo-2269872.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1024",
     twitterUrl: "#",
     linkedinUrl: "#",
   },
   {
-    name: "Lindsay Walton",
-    role: "Front-end Developer",
+    name: "Lisa Brown",
+    role: "Designer",
     imageUrl:
-      "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-    twitterUrl: "#",
-    linkedinUrl: "#",
-  },
-  {
-    name: "Lindsay Walton",
-    role: "Front-end Developer",
-    imageUrl:
-      "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+      "https://images.pexels.com/photos/1526814/pexels-photo-1526814.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1024",
     twitterUrl: "#",
     linkedinUrl: "#",
   },
