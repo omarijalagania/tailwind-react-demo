@@ -83,6 +83,7 @@ export default function Registration() {
                   >
                     პაროლი
                   </label>
+
                   <div className="mt-1">
                     <input
                       id="password"
@@ -93,16 +94,17 @@ export default function Registration() {
                       className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                     />
                   </div>
+
                   <label
-                    htmlFor="password"
+                    htmlFor="password2"
                     className="block text-sm font-medium text-gray-700"
                   >
                     გაიმეორეთ პაროლი
                   </label>
                   <div className="mt-1">
                     <input
-                      id="password"
-                      name="password"
+                      id="password2"
+                      name="password2"
                       type="password"
                       autoComplete="current-password"
                       required
