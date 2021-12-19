@@ -1,6 +1,16 @@
+import React from "react";
+
+import { Route, Routes } from "react-router-dom";
+
+import Home from "./components/Home";
+import SignIn from "./components/SignIn";
+
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline text-center">Hello world!</h1>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/signin" element={<SignIn />} />
+    </Routes>
   );
 }
 
