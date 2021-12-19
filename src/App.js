@@ -8,6 +8,7 @@ import SignIn from "./components/SignIn";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Registration from "./components/Registration";
+import PasswordReset from "./components/PasswordReset";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/signin" element={<SignIn />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/registration" element={<Registration />} />
+        <Route path="/password-reset" element={<PasswordReset />} />
       </Routes>
       <Footer />
     </>
