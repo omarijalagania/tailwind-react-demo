@@ -8,7 +8,7 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
 const navigation = [
   { name: "მთავარი", href: "/", current: true },
-  { name: "შესვლა", href: "/signIn", current: false },
+  // { name: "შესვლა", href: "/signIn", current: false },
   { name: "პროფილი", href: "/profile", current: false },
   { name: "დაგვიკავშირდით", href: "/contact", current: false },
   { name: "კალენდარი", href: "/calendar", current: false },
