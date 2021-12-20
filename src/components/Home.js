@@ -5,15 +5,17 @@ import "animate.css/animate.min.css";
 import SignIn from "./SignIn";
 import Registration from "./Registration";
 import Teams from "./Teams";
-import QR from "./QR";
 import Calendar from "./Calendar";
 import DataVisualization from "./DataVisualization ";
+import Contact from "./Contact";
 function Home() {
   return (
     <div>
+      <Registration />
       <SignIn />
-      <Calendar/>
-      <DataVisualization/>
+      <Calendar />
+      <DataVisualization />
+      <Contact />
     </div>
   );
 }
