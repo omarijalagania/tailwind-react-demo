@@ -16,7 +16,7 @@
 */
 export default function Profile() {
   return (
-    <form className="space-y-8 divide-y p-5 divide-gray-200 px-60 py-10">
+    <form className="space-y-8 divide-y p-5 divide-gray-200 px-10 py-10">
       <div className="space-y-8 divide-y divide-gray-200">
         <div>
           <div>
@@ -34,7 +34,7 @@ export default function Profile() {
                 htmlFor="username"
                 className="block text-sm font-medium text-gray-700"
               >
-               მომხმარებლის სახელი / Username
+                მომხმარებლის სახელი / Username
               </label>
               <div className="mt-1 flex rounded-md shadow-sm">
                 {/* <span className="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 sm:text-sm">
