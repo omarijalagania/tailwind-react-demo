@@ -16,16 +16,15 @@
 */
 export default function Profile() {
   return (
-    <form className="space-y-8 divide-y p-5 divide-gray-200">
+    <form className="space-y-8 divide-y p-5 divide-gray-200 px-60 py-10">
       <div className="space-y-8 divide-y divide-gray-200">
         <div>
           <div>
             <h3 className="text-lg leading-6 font-medium text-gray-900">
-              Profile
+              პროფილი
             </h3>
             <p className="mt-1 text-sm text-gray-500">
-              This information will be displayed publicly so be careful what you
-              share.
+              ეს ინფორმაცია საჯაროდ გამოჩნდება, ამიტომ ფრთხილად იყავით.
             </p>
           </div>
 
@@ -35,12 +34,12 @@ export default function Profile() {
                 htmlFor="username"
                 className="block text-sm font-medium text-gray-700"
               >
-                Username
+               მომხმარებლის სახელი / Username
               </label>
               <div className="mt-1 flex rounded-md shadow-sm">
-                <span className="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 sm:text-sm">
+                {/* <span className="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 sm:text-sm">
                   workcation.com/
-                </span>
+                </span> */}
                 <input
                   type="text"
                   name="username"
@@ -56,7 +55,7 @@ export default function Profile() {
                 htmlFor="about"
                 className="block text-sm font-medium text-gray-700"
               >
-                About
+                თქვენს შესახებ
               </label>
               <div className="mt-1">
                 <textarea
@@ -68,7 +67,7 @@ export default function Profile() {
                 />
               </div>
               <p className="mt-2 text-sm text-gray-500">
-                Write a few sentences about yourself.
+                {/* Write a few sentences about yourself. */}
               </p>
             </div>
 
@@ -77,7 +76,7 @@ export default function Profile() {
                 htmlFor="photo"
                 className="block text-sm font-medium text-gray-700"
               >
-                Photo
+                სურათი
               </label>
               <div className="mt-1 flex items-center">
                 <span className="h-12 w-12 rounded-full overflow-hidden bg-gray-100">
@@ -93,7 +92,7 @@ export default function Profile() {
                   type="button"
                   className="ml-5 bg-white py-2 px-3 border border-gray-300 rounded-md shadow-sm text-sm leading-4 font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                 >
-                  Change
+                  შეცვლა
                 </button>
               </div>
             </div>
@@ -103,7 +102,7 @@ export default function Profile() {
                 htmlFor="cover-photo"
                 className="block text-sm font-medium text-gray-700"
               >
-                Cover photo
+                გარეკანის ფოტო
               </label>
               <div className="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md">
                 <div className="space-y-1 text-center">
@@ -126,7 +125,7 @@ export default function Profile() {
                       htmlFor="file-upload"
                       className="relative cursor-pointer bg-white rounded-md font-medium text-indigo-600 hover:text-indigo-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500"
                     >
-                      <span>Upload a file</span>
+                      <span>ატვირთეთ ფაილი</span>
                       <input
                         id="file-upload"
                         name="file-upload"
@@ -134,10 +133,10 @@ export default function Profile() {
                         className="sr-only"
                       />
                     </label>
-                    <p className="pl-1">or drag and drop</p>
+                    <p className="pl-1">ან გადმოიტანეთ</p>
                   </div>
                   <p className="text-xs text-gray-500">
-                    PNG, JPG, GIF up to 10MB
+                    PNG, JPG, GIF არაუმეტეს 10MB
                   </p>
                 </div>
               </div>
@@ -148,10 +147,10 @@ export default function Profile() {
         <div className="pt-8">
           <div>
             <h3 className="text-lg leading-6 font-medium text-gray-900">
-              Personal Information
+              პერსონალური ინფორმაცია
             </h3>
             <p className="mt-1 text-sm text-gray-500">
-              Use a permanent address where you can receive mail.
+              გამოიყენეთ მუდმივი მისამართი, სადაც შეგიძლიათ მიიღოთ ფოსტა.
             </p>
           </div>
           <div className="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
@@ -160,7 +159,7 @@ export default function Profile() {
                 htmlFor="first-name"
                 className="block text-sm font-medium text-gray-700"
               >
-                First name
+                სახელი
               </label>
               <div className="mt-1">
                 <input
@@ -178,7 +177,7 @@ export default function Profile() {
                 htmlFor="last-name"
                 className="block text-sm font-medium text-gray-700"
               >
-                Last name
+                გვარი
               </label>
               <div className="mt-1">
                 <input
@@ -196,7 +195,7 @@ export default function Profile() {
                 htmlFor="email"
                 className="block text-sm font-medium text-gray-700"
               >
-                Email address
+                ელ. ფოსტა
               </label>
               <div className="mt-1">
                 <input
@@ -214,7 +213,7 @@ export default function Profile() {
                 htmlFor="country"
                 className="block text-sm font-medium text-gray-700"
               >
-                Country / Region
+                ქვეყანა / რეგიონი
               </label>
               <div className="mt-1">
                 <select
@@ -223,9 +222,9 @@ export default function Profile() {
                   autoComplete="country"
                   className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
                 >
-                  <option>United States</option>
-                  <option>Canada</option>
-                  <option>Mexico</option>
+                  <option>საქართველო</option>
+                  <option>აშშ</option>
+                  <option>მექსიკა</option>
                 </select>
               </div>
             </div>
@@ -235,7 +234,7 @@ export default function Profile() {
                 htmlFor="street-address"
                 className="block text-sm font-medium text-gray-700"
               >
-                Street address
+                მისამართი
               </label>
               <div className="mt-1">
                 <input
@@ -253,7 +252,7 @@ export default function Profile() {
                 htmlFor="city"
                 className="block text-sm font-medium text-gray-700"
               >
-                City
+                ქალაქი
               </label>
               <div className="mt-1">
                 <input
@@ -265,7 +264,7 @@ export default function Profile() {
               </div>
             </div>
 
-            <div className="sm:col-span-2">
+            {/* <div className="sm:col-span-2">
               <label
                 htmlFor="state"
                 className="block text-sm font-medium text-gray-700"
@@ -280,14 +279,14 @@ export default function Profile() {
                   className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
                 />
               </div>
-            </div>
+            </div> */}
 
             <div className="sm:col-span-2">
               <label
                 htmlFor="zip"
                 className="block text-sm font-medium text-gray-700"
               >
-                ZIP / Postal
+                ZIP კოდი
               </label>
               <div className="mt-1">
                 <input
@@ -302,7 +301,7 @@ export default function Profile() {
           </div>
         </div>
 
-        <div className="pt-8">
+        {/* <div className="pt-8">
           <div>
             <h3 className="text-lg leading-6 font-medium text-gray-900">
               Notifications
@@ -438,7 +437,7 @@ export default function Profile() {
               </div>
             </fieldset>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="pt-5">
@@ -447,13 +446,13 @@ export default function Profile() {
             type="button"
             className="bg-white py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
           >
-            Cancel
+            გაუქმება
           </button>
           <button
             type="submit"
             className="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
           >
-            Save
+            შენახვა
           </button>
         </div>
       </div>
