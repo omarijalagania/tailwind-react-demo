@@ -1,5 +1,7 @@
 import React from "react";
 
+import { AnimationOnScroll } from "react-animation-on-scroll";
+
 import {
   XAxis,
   YAxis,
@@ -121,6 +123,8 @@ function DataVisualization() {
 
   return (
     <div className="mt-20 mb-20">
+      <h1 className="text-center">მონაცემების ვიზუალიზაცია</h1>
+       <AnimationOnScroll animateIn="animate__fadeInLeftBig">
       <ResponsiveContainer width="96%" height={400}>
         <AreaChart
           width={730}
@@ -171,6 +175,7 @@ function DataVisualization() {
           />
         </AreaChart>
       </ResponsiveContainer>
+      </AnimationOnScroll>
     </div>
   );
 }

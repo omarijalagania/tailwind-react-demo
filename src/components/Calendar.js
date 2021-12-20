@@ -1,8 +1,11 @@
 import React from "react";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const Calendar = () => {
   return (
     <div className="w-auto mx-3 my-3 border-solid border-grey-light roundedrder shadow-lg  pb-10 mr-10">
+      <h1 className="text-center">კალენდარი</h1>
+       <AnimationOnScroll animateIn="animate__fadeInRightBig">
       <div className=" bg-grey-lighter px-2 py-10 pt-10 border-solid border-grey-light  text-center justify-center font-bold flex">
         <button>
           <svg
@@ -167,6 +170,7 @@ const Calendar = () => {
           </tr>
         </table>
       </div>
+      </AnimationOnScroll>
     </div>
   );
 };

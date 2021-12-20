@@ -11,10 +11,10 @@ const navigation = [
   // { name: "შესვლა", href: "/signIn", current: false },
   { name: "პროფილი", href: "/profile", current: false },
   { name: "დაგვიკავშირდით", href: "/contact", current: false },
-  { name: "კალენდარი", href: "/calendar", current: false },
+  // { name: "კალენდარი", href: "/calendar", current: false },
   { name: "რეგისტრაცია", href: "/registration", current: false },
   { name: "QR Code", href: "/qr", current: false },
-  { name: "Data Visualization", href: "/dataVisualization", current: false },
+  // { name: "Data Visualization", href: "/dataVisualization", current: false },
   { name: "Print", href: "/print", current: false },
 ];
 
