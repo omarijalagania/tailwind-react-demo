@@ -1,5 +1,7 @@
 import React from "react";
 
+import "animate.css/animate.min.css";
+
 import SignIn from "./SignIn";
 import Registration from "./Registration";
 import Teams from "./Teams";
