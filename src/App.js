@@ -14,6 +14,7 @@ import QR from "./components/QR";
 import DataVisualization from "./components/DataVisualization ";
 import Print from "./components/Print";
 import Calendar from "./components/Calendar";
+import Profile from "./components/Profile";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/dataVisualization" element={<DataVisualization />} />
         <Route path="/print" element={<Print />} />
         <Route path="/calendar" element={<Calendar />} />
+        <Route path="/profile" element={<Profile />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer />
