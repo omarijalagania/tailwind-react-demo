@@ -207,7 +207,7 @@ export default function Contact() {
           <div className="py-24 lg:py-32">
             <div className="relative z-10 max-w-7xl mx-auto pl-4 pr-8 sm:px-6 lg:px-8">
               <h1 className="text-4xl font-extrabold tracking-tight text-warm-gray-900 sm:text-5xl lg:text-6xl">
-                Get in touch
+                დაგვიკავშირდი
               </h1>
               <p className="mt-6 text-xl text-warm-gray-500 max-w-3xl">
                 Vel nunc non ut montes, viverra tempor. Proin lectus nibh
@@ -266,7 +266,7 @@ export default function Contact() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="relative bg-white shadow-xl">
               <h2 id="contact-heading" className="sr-only">
-                Contact us
+                დაგვიკავშირდი
               </h2>
 
               <div className="grid grid-cols-1 lg:grid-cols-3">
@@ -373,7 +373,7 @@ export default function Contact() {
                     </svg>
                   </div>
                   <h3 className="text-lg font-medium text-white">
-                    Contact information
+                    საკონტაქტო ინფორმაცია
                   </h3>
                   <p className="mt-6 text-base text-teal-50 max-w-3xl">
                     Nullam risus blandit ac aliquam justo ipsum. Quam mauris
@@ -381,17 +381,17 @@ export default function Contact() {
                   </p>
                   <dl className="mt-8 space-y-6">
                     <dt>
-                      <span className="sr-only">Phone number</span>
+                      <span className="sr-only">ტელეფონის ნომერი</span>
                     </dt>
                     <dd className="flex text-base text-teal-50">
                       <PhoneIcon
                         className="flex-shrink-0 w-6 h-6 text-teal-200"
                         aria-hidden="true"
                       />
-                      <span className="ml-3">+1 (555) 123-4567</span>
+                      <span className="ml-3">+995 599 00 00 00</span>
                     </dd>
                     <dt>
-                      <span className="sr-only">Email</span>
+                      <span className="sr-only">ელ ფოსტა</span>
                     </dt>
                     <dd className="flex text-base text-teal-50">
                       <MailIcon
@@ -455,7 +455,7 @@ export default function Contact() {
                 {/* Contact form */}
                 <div className="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
                   <h3 className="text-lg font-medium text-warm-gray-900">
-                    Send us a message
+                    მოგვწერე შეტყობინება
                   </h3>
                   <form
                     action="#"
@@ -467,7 +467,7 @@ export default function Contact() {
                         htmlFor="first-name"
                         className="block text-sm font-medium text-warm-gray-900"
                       >
-                        First name
+                        სახელი
                       </label>
                       <div className="mt-1">
                         <input
@@ -484,7 +484,7 @@ export default function Contact() {
                         htmlFor="last-name"
                         className="block text-sm font-medium text-warm-gray-900"
                       >
-                        Last name
+                        გვარი
                       </label>
                       <div className="mt-1">
                         <input
@@ -501,7 +501,7 @@ export default function Contact() {
                         htmlFor="email"
                         className="block text-sm font-medium text-warm-gray-900"
                       >
-                        Email
+                        ელ ფოსტა
                       </label>
                       <div className="mt-1">
                         <input
@@ -519,14 +519,12 @@ export default function Contact() {
                           htmlFor="phone"
                           className="block text-sm font-medium text-warm-gray-900"
                         >
-                          Phone
+                          ტელეფონი
                         </label>
                         <span
                           id="phone-optional"
                           className="text-sm text-warm-gray-500"
-                        >
-                          Optional
-                        </span>
+                        ></span>
                       </div>
                       <div className="mt-1">
                         <input
@@ -544,7 +542,7 @@ export default function Contact() {
                         htmlFor="subject"
                         className="block text-sm font-medium text-warm-gray-900"
                       >
-                        Subject
+                        საგანი
                       </label>
                       <div className="mt-1">
                         <input
@@ -561,13 +559,13 @@ export default function Contact() {
                           htmlFor="message"
                           className="block text-sm font-medium text-warm-gray-900"
                         >
-                          Message
+                          შეტყობინება
                         </label>
                         <span
                           id="message-max"
                           className="text-sm text-warm-gray-500"
                         >
-                          Max. 500 characters
+                          მაქსიმუმ 500 სიმბოლო
                         </span>
                       </div>
                       <div className="mt-1">
@@ -586,7 +584,7 @@ export default function Contact() {
                         type="submit"
                         className="mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-teal-500 hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 sm:w-auto"
                       >
-                        Submit
+                        გაგზავნა
                       </button>
                     </div>
                   </form>
