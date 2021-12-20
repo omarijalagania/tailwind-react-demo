@@ -49,11 +49,13 @@ export default function NavBar() {
                       alt="Workflow"
                     />
                   </Link>
-                  <img
-                    className="hidden lg:block h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
-                    alt="Workflow"
-                  />
+                  <Link to="/">
+                    <img
+                      className="hidden lg:block h-8 w-auto"
+                      src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
+                      alt="Workflow"
+                    />
+                  </Link>
                 </div>
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4">
