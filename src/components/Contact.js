@@ -121,7 +121,7 @@ const footerNavigation = {
 export default function Contact() {
   return (
     <AnimationOnScroll animateIn="animate__fadeInUpBig">
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen bg-white py-20">
         <Popover as="header" className="relative">
           <Transition
             as={Fragment}
@@ -580,7 +580,7 @@ export default function Contact() {
             </div>
           </section>
 
-          {/* Contact grid */}
+          {/* Contact grid
           <section aria-labelledby="offices-heading">
             <div className="max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
               <h2
@@ -611,7 +611,7 @@ export default function Contact() {
                 ))}
               </div>
             </div>
-          </section>
+          </section> */}
         </main>
       </div>
     </AnimationOnScroll>
