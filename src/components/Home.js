@@ -8,6 +8,7 @@ import Teams from "./Teams";
 import Calendar from "./Calendar";
 import DataVisualization from "./DataVisualization ";
 import Contact from "./Contact";
+import Drag from "./Drag";
 function Home() {
   return (
     <div>
@@ -16,6 +17,7 @@ function Home() {
       <Calendar />
       <DataVisualization />
       <Contact />
+      <Drag />
     </div>
   );
 }
