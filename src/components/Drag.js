@@ -23,6 +23,7 @@ function Drag() {
       <DropzoneArea
         showPreviews={true}
         showPreviewsInDropzone={false}
+        showFileNamesInPreview={true}
         filesLimit={10}
         onChange={handleChange.bind(null, files)}
         dropzoneText="ატვირთეთ ან გადმოიტანეთ ფაილი, არაუმეტეს 10MB"
