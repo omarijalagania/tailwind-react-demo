@@ -25,8 +25,8 @@ function Drag() {
         showPreviewsInDropzone={false}
         filesLimit={10}
         onChange={handleChange.bind(null, files)}
+        dropzoneText="ატვირთეთ ან გადმოიტანეთ ფაილი, არაუმეტეს 10MB"
         previewGridProps={{ container: { spacing: 5, direction: "row" } }}
-        previewChipProps={{ classes: { root: classes.previewChip } }}
         previewText="Selected files"
       />
     </div>
