@@ -16,7 +16,7 @@
 */
 export default function Profile() {
   return (
-    <form className="space-y-8 divide-y p-5 divide-gray-200 px-10 py-10">
+    <form className="space-y-8 divide-y p-5 divide-gray-200 px-40 py-12">
       <div className="space-y-8 divide-y divide-gray-200">
         <div>
           <div>
