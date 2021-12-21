@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { createStyles, makeStyles } from "@material-ui/core/styles";
 import { DropzoneArea } from "material-ui-dropzone";
 
 function Drag() {
@@ -7,9 +7,28 @@ function Drag() {
   const handleChange = (files) => {
     setFiles(files);
   };
+
+  const useStyles = makeStyles((theme) =>
+    createStyles({
+      previewChip: {
+        minWidth: 160,
+        maxWidth: 210,
+      },
+    })
+  );
+
+  const classes = useStyles();
   return (
-    <div className="sm:p-20 p-1">
-      <DropzoneArea onChange={handleChange.bind(null, files)} />
+    <div className="sm:px-20 md:px-60 md:py-20">
+      <DropzoneArea
+        showPreviews={true}
+        showPreviewsInDropzone={false}
+        filesLimit={10}
+        onChange={handleChange.bind(null, files)}
+        previewGridProps={{ container: { spacing: 5, direction: "row" } }}
+        previewChipProps={{ classes: { root: classes.previewChip } }}
+        previewText="Selected files"
+      />
     </div>
   );
 }
