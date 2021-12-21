@@ -7,7 +7,7 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const Calendar = () => {
   return (
-    <div className="p-20">
+    <div className="p-20 sm:p-5">
       <h1 className="text-center">კალენდარი</h1>
       <AnimationOnScroll animateIn="animate__fadeInRightBig">
         <FullCalendar
