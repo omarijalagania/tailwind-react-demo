@@ -6,7 +6,7 @@ function QR() {
 
   return (
     <div className="flex justify-center">
-      <div className="p-20">
+      <div className="py-48">
         <QRCode value={qr} />
         <input
           className="mt-3 p-1 w-full border-2"
