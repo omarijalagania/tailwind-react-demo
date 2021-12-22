@@ -9,11 +9,11 @@ export default function SignIn() {
     <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <AnimationOnScroll animateIn="animate__bounceIn">
         <div className="sm:mx-auto sm:w-full sm:max-w-md">
-          {/* <img
+          <img
             className="mx-auto h-12 w-auto"
-            src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+            src="https://uas.gov.ge/infopage/img/logo.png"
             alt="Workflow"
-          /> */}
+          />
           <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
             შესვლა
           </h2>
