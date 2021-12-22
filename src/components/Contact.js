@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
-import { MailIcon, MenuIcon, PhoneIcon, XIcon } from "@heroicons/react/outline";
+import { MailIcon, HomeIcon, PhoneIcon, XIcon } from "@heroicons/react/outline";
 
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
@@ -187,9 +187,9 @@ export default function Contact() {
                   დაგვიკავშირდი
                 </h1>
                 <p className="mt-6 text-xl text-warm-gray-500 max-w-3xl">
-                  Vel nunc non ut montes, viverra tempor. Proin lectus nibh
-                  phasellus morbi non morbi. In elementum urna ut volutpat.
-                  Sagittis et vel et fermentum amet consequat.
+                  დაგვიტოვეთ შეტყობინება, გაგვიზიარეთ თქვენი სურვილები და
+                  მოლოდინები ჩვენი კომპანიის მიმართ, რაც მომსახურების
+                  გაუმჯობესებაში დაგვეხმარება.
                 </p>
               </div>
             </div>
@@ -352,10 +352,15 @@ export default function Contact() {
                     <h3 className="text-lg font-medium text-white">
                       საკონტაქტო ინფორმაცია
                     </h3>
-                    <p className="mt-6 text-base text-teal-50 max-w-3xl">
-                      Nullam risus blandit ac aliquam justo ipsum. Quam mauris
-                      volutpat massa dictumst amet. Sapien tortor lacus arcu.
-                    </p>
+                    <div className="flex justify-center">
+                      <HomeIcon
+                        className="flex-shrink-0 w-6 h-6 mt-6 mr-4 text-teal-200"
+                        aria-hidden="true"
+                      />
+                      <p className="mt-6 text-base text-teal-50 max-w-3xl">
+                        მარშალ გელოვანის გამზირი 999, 0011 თბილისი, საქართველო
+                      </p>
+                    </div>
                     <dl className="mt-8 space-y-6">
                       <dt>
                         <span className="sr-only">ტელეფონის ნომერი</span>
@@ -375,7 +380,7 @@ export default function Contact() {
                           className="flex-shrink-0 w-6 h-6 text-teal-200"
                           aria-hidden="true"
                         />
-                        <span className="ml-3">support@workcation.com</span>
+                        <span className="ml-3">support@gmail.com</span>
                       </dd>
                     </dl>
                     <ul role="list" className="mt-8 flex space-x-12">
@@ -528,7 +533,7 @@ export default function Contact() {
                           htmlFor="subject"
                           className="block text-sm font-medium text-warm-gray-900"
                         >
-                          საგანი
+                          თემა
                         </label>
                         <div className="mt-1">
                           <input
