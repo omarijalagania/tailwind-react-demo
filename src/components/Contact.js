@@ -120,7 +120,7 @@ const footerNavigation = {
 
 export default function Contact() {
   return (
-    <AnimationOnScroll animateIn="animate__fadeInUpBig">
+    <AnimationOnScroll animateIn="animate__fadeIn">
       <div className="min-h-screen bg-white py-20">
         <Popover as="header" className="relative">
           <Transition
