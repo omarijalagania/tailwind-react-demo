@@ -79,7 +79,7 @@ export default function SignIn() {
                 <div className="text-sm">
                   <Link
                     to="/password-reset"
-                    className="font-medium text-indigo-600 hover:text-indigo-500"
+                    className="font-medium text-blue-600 hover:text-blue-400"
                   >
                     პაროლის აღდგენა
                   </Link>
@@ -89,7 +89,7 @@ export default function SignIn() {
               <div>
                 <button
                   type="submit"
-                  className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                  className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                 >
                   შესვლა
                 </button>

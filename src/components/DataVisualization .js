@@ -134,8 +134,8 @@ function DataVisualization() {
         >
           <defs>
             <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="5%" stopColor="#8884d8" stopOpacity={0.8} />
-              <stop offset="60%" stopColor="#8884d8" stopOpacity={0} />
+              <stop offset="5%" stopColor="#4a89dc" stopOpacity={0.8} />
+              <stop offset="60%" stopColor="#4a89dc" stopOpacity={0} />
             </linearGradient>
             <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
               <stop offset="5%" stopColor="#82ca9d" stopOpacity={0.8} />
@@ -160,7 +160,7 @@ function DataVisualization() {
           <Area
             type="monotone"
             dataKey="რაოდენობა"
-            stroke="#8884d8"
+            stroke="#4a89dc"
             fillOpacity={1}
             fill="url(#colorUv)"
             activeDot={{ r: 6 }}
