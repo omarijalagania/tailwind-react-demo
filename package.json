@@ -21,6 +21,7 @@
     "react-qr-code": "^2.0.3",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
+    "react-signature-canvas": "^1.0.3",
     "react-to-print": "^2.14.2",
     "recharts": "^2.1.8",
     "web-vitals": "^2.1.2"

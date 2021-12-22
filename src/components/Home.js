@@ -9,6 +9,7 @@ import Calendar from "./Calendar";
 import DataVisualization from "./DataVisualization ";
 import Contact from "./Contact";
 import Drag from "./Drag";
+import Signature from "./Signature";
 function Home() {
   return (
     <div>
@@ -18,6 +19,7 @@ function Home() {
       <DataVisualization />
       <Contact />
       <Drag />
+      <Signature />
     </div>
   );
 }
