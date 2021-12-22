@@ -122,10 +122,10 @@ function DataVisualization() {
   ];
 
   return (
-    <div className="mt-20 mb-20">
+    <div className="py-10 px-48">
       <h1 className="text-center">მონაცემების ვიზუალიზაცია</h1>
        <AnimationOnScroll animateIn="animate__fadeInLeftBig">
-      <ResponsiveContainer width="96%" height={400}>
+      <ResponsiveContainer width="100%" height={350}>
         <AreaChart
           width={730}
           height={455}
