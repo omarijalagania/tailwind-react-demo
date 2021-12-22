@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
 import { Link } from "react-router-dom";
 
+import Modal from "./Modal";
+
 export default function SignIn() {
+  //Pass this State to Modal
+  const [open, setOpen] = useState(false);
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <AnimationOnScroll animateIn="animate__bounceIn">
@@ -102,6 +106,16 @@ export default function SignIn() {
                   <div className="w-full border-t border-gray-300" />
                 </div>
               </div>
+            </div>
+            <div className="flex justify-center">
+              {open && <Modal open={open} setOpen={setOpen} />}
+              <button
+                onClick={() => setOpen(!open)}
+                type="submit"
+                className="w-25 flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              >
+                ინფორმაცია
+              </button>
             </div>
           </div>
         </div>
