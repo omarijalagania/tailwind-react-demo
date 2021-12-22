@@ -20,7 +20,7 @@ function Signature() {
   return (
     <>
       <h1 className="text-center mb-5">ელექტრონული ხელმოწერა</h1>
-      <div className="flex justify-center p-1 mb-5">
+      <div className="flex justify-center md:px-60 p-1 mb-5">
         <SignatureCanvas
           ref={sigCanvas}
           penColor="black"
