@@ -122,7 +122,7 @@ function DataVisualization() {
   ];
 
   return (
-    <div className="py-10 px-48">
+    <div className="lg:px-44 py-10 ">
       <h1 className="text-center">მონაცემების ვიზუალიზაცია</h1>
        <AnimationOnScroll animateIn="animate__fadeInLeftBig">
       <ResponsiveContainer width="100%" height={350}>
