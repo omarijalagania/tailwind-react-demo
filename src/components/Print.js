@@ -50,8 +50,8 @@ export default function Print() {
         className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8"
       >
         <DownloadAsPDF downloadFileName="CustomPdf" rootElementId="testId" />
-        <form id="testId" className="space-y-8 divide-y p-5 divide-gray-200 ">
-          <div className="space-y-8 divide-y divide-gray-200">
+        <form  className="space-y-8 divide-y p-5 divide-gray-200 ">
+          <div id="testId" className="p-5 space-y-8 divide-y divide-gray-200">
             <div>
               <div>
                 <h3 className="text-lg leading-6 font-medium text-gray-900">
