@@ -51,8 +51,11 @@ export default function Print() {
       >
         <DownloadAsPDF downloadFileName="CustomPdf" rootElementId="testId" />
         <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
-          <div className="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
-            <table id="testId" className="min-w-full divide-y divide-gray-200">
+          <div
+            id="testId"
+            className="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg"
+          >
+            <table className="min-w-full divide-y divide-gray-200">
               <thead className="bg-gray-50">
                 <tr>
                   <th
