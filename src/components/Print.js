@@ -3,40 +3,6 @@ import { useReactToPrint } from "react-to-print";
 
 import DownloadAsPDF from "./DownloadAsPDF";
 
-const people = [
-  {
-    name: "Jane Cooper",
-    title: "Regional Paradigm Technician",
-    role: "Admin",
-    email: "jane.cooper@example.com",
-  },
-  {
-    name: "Jane Cooper",
-    title: "Regional Paradigm Technician",
-    role: "Admin",
-    email: "jane.cooper@example.com",
-  },
-  {
-    name: "Jane Cooper",
-    title: "Regional Paradigm Technician",
-    role: "Admin",
-    email: "jane.cooper@example.com",
-  },
-  {
-    name: "Jane Cooper",
-    title: "Regional Paradigm Technician",
-    role: "Admin",
-    email: "jane.cooper@example.com",
-  },
-  {
-    name: "Jane Cooper",
-    title: "Regional Paradigm Technician",
-    role: "Admin",
-    email: "jane.cooper@example.com",
-  },
-  // More people...
-];
-
 export default function Print() {
   const componentRef = useRef("");
 
@@ -47,9 +13,33 @@ export default function Print() {
     <div className="flex flex-col justify-center lg:px-60 sm:px-10 py-4">
       <div
         ref={componentRef}
-        className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8"
+        className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8 flex flex-col-reverse"
       >
-        <DownloadAsPDF downloadFileName="CustomPdf" rootElementId="testId" />
+            <div className="print:hidden py-5">
+            <div className="flex justify-end">
+              <button
+                type="button"
+                className="bg-white py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+              >
+                გაუქმება
+              </button>
+              <button
+                type="submit"
+                className="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+              >
+                შენახვა
+              </button>
+              <button
+                onClick={handlePrint}
+                type="button"
+                className="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+              >
+                ამობეჭდვა
+              </button>
+              <DownloadAsPDF downloadFileName="CustomPdf" rootElementId="testId" />
+            </div>
+          </div>
+        
         <form  className="space-y-8 divide-y p-5 divide-gray-200 ">
           <div id="testId" className="p-5 space-y-8 divide-y divide-gray-200">
             <div>
@@ -474,29 +464,7 @@ export default function Print() {
         </div> */}
           </div>
 
-          <div className="print:hidden pt-5">
-            <div className="flex justify-end">
-              <button
-                type="button"
-                className="bg-white py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-              >
-                გაუქმება
-              </button>
-              <button
-                type="submit"
-                className="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-              >
-                შენახვა
-              </button>
-              <button
-                onClick={handlePrint}
-                type="button"
-                className="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-              >
-                ამობეჭდვა
-              </button>
-            </div>
-          </div>
+      
         </form>
       </div>{" "}
       {/* <button
