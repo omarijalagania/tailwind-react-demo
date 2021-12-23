@@ -44,7 +44,7 @@ export default function Print() {
     content: () => componentRef.current,
   });
   return (
-    <div className="flex flex-col justify-center px-60 py-4">
+    <div className="flex flex-col justify-center lg:px-60 sm:px-10 py-4">
       <div
         ref={componentRef}
         className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8"
