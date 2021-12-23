@@ -112,7 +112,7 @@ export default function SignIn() {
               <button
                 onClick={() => setOpen(!open)}
                 type="submit"
-                className="w-25 flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                className="w-25 flex justify-center py-2 mt-8 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
               >
                 ინფორმაცია
               </button>
