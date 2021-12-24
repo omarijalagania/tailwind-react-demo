@@ -1,10 +1,23 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { useReactToPrint } from "react-to-print";
 
 import DownloadAsPDF from "./DownloadAsPDF";
 
 export default function Print() {
+  const [file, setFile] = useState("");
   const componentRef = useRef("");
+
+  //get uploaded image as base64
+
+  const onImageChange = (event) => {
+    if (event.target.files && event.target.files[0]) {
+      let reader = new FileReader();
+      reader.onload = (e) => {
+        setFile(e.target.result);
+      };
+      reader.readAsDataURL(event.target.files[0]);
+    }
+  };
 
   const handlePrint = useReactToPrint({
     content: () => componentRef.current,
@@ -15,32 +28,35 @@ export default function Print() {
         ref={componentRef}
         className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8 flex flex-col-reverse"
       >
-            <div className="print:hidden py-5">
-            <div className="flex md:flex-row md:justify-end flex flex-col justify-between">
-              <button
-                type="button"
-                className="ml-3 m-2 bg-white py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-              >
-                გაუქმება
-              </button>
-              <button
-                type="submit"
-                className="ml-3 m-2 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-              >
-                შენახვა
-              </button>
-              <button
-                onClick={handlePrint}
-                type="button"
-                className="ml-3 m-2 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-              >
-                ამობეჭდვა
-              </button>
-              <DownloadAsPDF downloadFileName="CustomPdf" rootElementId="testId" />
-            </div>
+        <div className="print:hidden py-5">
+          <div className="flex md:flex-row md:justify-end flex-col justify-between">
+            <button
+              type="button"
+              className="ml-3 m-2 bg-white py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+            >
+              გაუქმება
+            </button>
+            <button
+              type="submit"
+              className="ml-3 m-2 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+            >
+              შენახვა
+            </button>
+            <button
+              onClick={handlePrint}
+              type="button"
+              className="ml-3 m-2 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+            >
+              ამობეჭდვა
+            </button>
+            <DownloadAsPDF
+              downloadFileName="CustomPdf"
+              rootElementId="testId"
+            />
           </div>
-        
-        <form  className="space-y-8 divide-y p-5 divide-gray-200 ">
+        </div>
+
+        <form className="space-y-8 divide-y p-5 divide-gray-200 ">
           <div id="testId" className="p-5 space-y-8 divide-y divide-gray-200">
             <div>
               <div>
@@ -104,13 +120,17 @@ export default function Print() {
                   </label>
                   <div className="mt-1 flex items-center">
                     <span className="h-12 w-12 rounded-full overflow-hidden bg-gray-100">
-                      <svg
-                        className="h-full w-full text-gray-300"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" />
-                      </svg>
+                      {file === "" ? (
+                        <svg
+                          className="h-full w-full text-gray-300"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                      ) : (
+                        <img width="48" height="48" src={file} alt="img" />
+                      )}
                     </span>
                     <button
                       type="button"
@@ -155,6 +175,7 @@ export default function Print() {
                             name="file-upload"
                             type="file"
                             className="sr-only"
+                            onChange={onImageChange}
                           />
                         </label>
                         <p className="pl-1">ან გადმოიტანეთ</p>
@@ -463,8 +484,6 @@ export default function Print() {
           </div>
         </div> */}
           </div>
-
-      
         </form>
       </div>{" "}
       {/* <button
