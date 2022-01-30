@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
 import { Link } from "react-router-dom";
@@ -7,6 +7,29 @@ import { Link } from "react-router-dom";
 import Modal from "./Modal";
 
 export default function SignIn() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const [token, setToken] = useState("");
+
+  const loginHandler = async () => {
+    try {
+      const response = await axios.post(
+        "https://restapi-mongo.onrender.com/api/user/login",
+        {
+          email: email,
+          password: password,
+        }
+      );
+      setToken(response.data.token);
+      if (token) {
+        console.log("Logged in");
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   //Pass this State to Modal
   const [open, setOpen] = useState(false);
   return (
@@ -25,7 +48,7 @@ export default function SignIn() {
 
         <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
           <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
-            <form className="space-y-6" action="#" method="POST">
+            <div className="space-y-6">
               <div>
                 <label
                   htmlFor="email"
@@ -35,6 +58,7 @@ export default function SignIn() {
                 </label>
                 <div className="mt-1">
                   <input
+                    onChange={(e) => setEmail(e.target.value)}
                     id="email"
                     name="email"
                     type="email"
@@ -54,6 +78,7 @@ export default function SignIn() {
                 </label>
                 <div className="mt-1">
                   <input
+                    onChange={(e) => setPassword(e.target.value)}
                     id="password"
                     name="password"
                     type="password"
@@ -92,13 +117,13 @@ export default function SignIn() {
 
               <div>
                 <button
-                  type="submit"
+                  onClick={loginHandler}
                   className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                 >
                   შესვლა
                 </button>
               </div>
-            </form>
+            </div>
 
             <div className="mt-6">
               <div className="relative">
