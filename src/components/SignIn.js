@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import Modal from "./Modal";
 
@@ -11,7 +11,7 @@ export default function SignIn() {
   const [password, setPassword] = useState("");
 
   const [token, setToken] = useState("");
-
+  let navigate = useNavigate();
   const loginHandler = async () => {
     try {
       const response = await axios.post(
@@ -29,6 +29,12 @@ export default function SignIn() {
       console.log(error);
     }
   };
+
+  useEffect(() => {
+    if (token) {
+      return navigate("/dashboard");
+    }
+  }, [token]);
 
   //Pass this State to Modal
   const [open, setOpen] = useState(false);

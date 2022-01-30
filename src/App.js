@@ -11,6 +11,7 @@ import QR from "./components/QR";
 import Print from "./components/Print";
 import Profile from "./components/Profile";
 import SignIn from "./components/SignIn";
+import Dashboard from "./components/dashboard";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="*" element={<PageNotFound />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
       <Footer />
     </>
